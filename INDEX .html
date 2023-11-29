@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZARA THERAPY</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        * {
+            padding: O;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+
+        h1 {
+            font-family: 'Dancing Script', cursive;
+        }
+
+        .carousel-item img {
+            width: 100%;
+            height: 80vh;
+        }
+
+        .dil {
+            margin-left: 0%;
+        }
+
+        .card {
+            height: 400px;
+        }
+
+        .card-body img {
+            width: 80%;
+            height: 90%;
+        }
+
+        .products {
+            height: 200px !important;
+        }
+
+        .swiper {
+            width: 100%;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            width: 300px;
+            height: 300px;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="home">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 border-bottom fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand fs-2" href="#"><img src="assets/logo.jpeg" style="height: 50px;"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5 text-end">
+                        <li class="nav-item">
+                            <a class="nav-link active text-primary" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Products
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#products">OILS</a></li>
+                                <li><a class="dropdown-item" href="#products">MASSAGER</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#products">Machine</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Our Services </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#gallery">Gallery </a>
+                        </li>
+
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+        <div id="carouselExampleCaptions" class="carousel slide myarousel" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/TRY  PIC.jpg" class="d-block w-100"
+                        style="object-fit: cover; object-position: center;" alt="...">
+                    <div class="carousel-caption  d-md-block">
+                        <h5></h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/TRY 2 PIC.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption  d-md-block">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/800px_COLOURBOX42062257.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption  d-md-block">
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </header>
+    <section class="about my-5" id="about">
+        <div class="container ">
+            <div class="text-center my-5">
+                <h1 data-aos="fade-up" data-aos-offset="200">About <span class="text-primary">us</span></h1>
+                <hr class="w-25 m-auto">
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-8" data-aos="zoom-in" data-aos-offset="200">
+                    <h1 class="p-2">
+                        DO YOU WANT TO <span class="text-primary">JOIN WITH US ? </span>
+                    </h1 class="p-2">
+                    <p>When we are balanced in body, mind, and soul, we radiate health and happiness. Zara means
+                        ‘radiance’, and the definition of radiance is “an attractive combination of good health and
+                        happiness.” Radiance implies happiness, glowing, vivacity, warmth, joy, brightness, brilliance,
+                        liveliness, energy, vitality, and strength. Here at Zara Clinic, we help every patient find or
+                        return to their most radiant self. We provide elite holistic medicine treatments that help
+                        patients address any issues that may be keeping them from feeling absolutely radiant.
+                        ...</p>
+
+                </div>
+                <div class="dil col-lg-4 col-md-6 col-sm-12 text-center" data-aos="zoom-in-left" data-aos-offset="200">
+                    <img src="assets/services.jpeg" width="100%">
+                </div>
+
+
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- CARDS STARTS HERE -->
+    <section class="PRODUCTS my-5 bg-light" id="products">
+        <div class="container my-5">
+            <div class=" my-5 text-center">
+                <h1 data-aos="fade-up" data-aos-offset="300">Our <span class="text-primary">Products </span></h1>
+                <hr class="w-25 m-auto">
+            </div>
+            <center>
+                <div class="row data-aos=" zoom-in-up data-aos-offset="200">
+
+                    <div class="col-sm-12 col-md-4 col-lg-4">
+
+                        <div class="product-card">
+                            <div class="img-body">
+                                <img src="assets/first div.jpeg" width="100%" height="100%">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Life Care Body LC-930 </h5>
+                                <p class="card-text"> Electric massager</p>
+                                <P>RS.4,999.</P>
+                                <a href="#" class="btn btn-primary">BUY NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-4">
+
+                        <div class="product-card">
+                            <div class="img-body">
+                                <img src="assets/second div.jpeg" width="100%" height="100%">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Life Care Body LC-930 </h5>
+                                <p class="card-text"> Body Relaxing & Shaping Massager.</p>
+                                <P>RS.4,999.</P>
+                                <a href="#" class="btn btn-primary">BUY NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-4">
+
+                        <div class="product-card">
+                            <div class="img-body">
+                                <img src="assets/Third div.jpeg" width="100%" height="100%">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Life Care Body LC-930 </h5>
+                                <p class="card-text"> Body Relaxing & Shaping Massager.</p>
+                                <P>RS.4,999.</P>
+                                <a href="#" class="btn btn-primary">BUY NOW</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-sm-12 col-md-4 col-lg-4">
+
+                        <div class="product-card">
+                            <div class="img-body">
+                                <img src="assets/fourth.jpeg" width="100%" height="100%">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Life Care Body LC-930 </h5>
+                                <p class="card-text"> Body Relaxing & Shaping Massager.</p>
+                                <P>RS.4,999.</P>
+                                <a href="#" class="btn btn-primary">BUY NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-4">
+
+                        <div class="product-card">
+                            <div class="img-body">
+                                <img src="assets/fifth.jpeg" width="100%" height="100%">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Life Care Body LC-930 </h5>
+                                <p class="card-text"> Body Relaxing & Shaping Massager.</p>
+                                <P>RS.4,999.</P>
+                                <a href="#" class="btn btn-primary">BUY NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+
+                        <div class="product-card">
+                            <div class="img-body">
+                                <img src="assets/sixth.jpeg" width="100%" height="100%">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Life Care Body LC-930 </h5>
+                                <p class="card-text"> Body Relaxing & Shaping Massager.</p>
+                                <P>RS.4,999.</P>
+                                <a href="#" class="btn btn-primary">BUY NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </center>
+    </section>
+    <!-- CARDS ENDS HERE -->
+
+    <section class="services my-5 text-center  " id="services">
+        <div class="container my-5">
+            <div class="text-center my-5">
+                <h1 data-aos="fade-up" data-aos-offset="300">Our <span class="text-primary">Services </span></h1>
+                <hr class="w-25 m-auto">
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+                    <div class="card service-card">
+                        <div class="card-body">
+                            <img src="assets/WorkInjuriesCar.png" style="width: 200px;height: 200px; object-fit: cover;"
+                                class="img-fluid rounded-circle border border-primary p-2">
+                            <h5 class="card-title mt-4">Work Injuries and Car</h5>
+                            <p class="card-text">Physical therapy is one of the major services which we offer. Our
+                                therapists work closely with patients to help them improve their movement potential and
+                                gain a healthier and more complete...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+                    <div class="card service-card">
+                        <div class="card-body">
+                            <img src="assets/MassageTherapy.png" style="width: 200px; height:200px; object-fit:cover"
+                                class="img-fluid rounded-circle border border-primary p-2">
+                            <h5 class="card-title mt-4">PHYSICAL Therapy</h5>
+                            <p class="card-text">Physical therapy, also known as physiotherapy, may include certain
+                                exercises, massages and treatments based on physical stimuli (e.g. heat, cold,
+                                electrical currents or ultrasound).
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+                    <div class="card service-card">
+                        <div class="card-body">
+                            <img src="assets/PhysicalTherapy.png" style="width: 200px; height:200px; object-fit:cover"
+                                class="img-fluid rounded-circle border border-primary p-2 ">
+                            <h5 class="card-title mt-4">Massage Therapy</h5>
+                            <p class="card-text">In massage therapy, a massage therapist rubs and kneads the soft
+                                tissues of your body. The soft tissues include muscle, connective tissue, tendons,
+                                ligaments, and skin.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- services ends -->
+
+    <section class="gallery my-5 text-center" id="gallery">
+        <h1 data-aos="fade-up" data-aos-offset="300">OUR <span class="text-primary">Gallery</span></h1>
+        <hr class="text-center">
+        <div class="container gallery">
+            <div class="imge">
+                <img src="assets/2 GALLERY PIC .jpg" alt="" height="150px" width="350px">
+                <img src="assets/3 GALLERY PIC.jpg" alt="" height="150px" width="255px">
+                <img src="assets/4 GALLERY PIC .jpg" alt="" height="150px" width="150px">
+                <img src="assets/WhatsApp Image 2023-10-16 at 6.15.54 PM (1).jpeg" alt="" height="150px" width="210px">
+                <img src="assets/5 GALLERY PIC.jpg" alt="" height="150px" width="260px">
+                <img src="assets/6 GALLERY PIC.jpg" alt="" height="150px" width="290px">
+                <img src="assets/7 GALLERY PIC .jpg" alt="" height="150px" width="190px">
+                <img src="assets/pic 11.webp" alt="" height="150px" width="220px">
+                <img src="assets/PhysicalTherapy.png" alt="" height="150px" width="210px">
+                <img src="assets/pic 10.webp" alt="" height="150px" width="215px">
+                <img src="assets/pic 11.webp" alt="" height="150px" width="250px">
+                <img src="assets/pic 12.webp" alt="" height="150px" width="250px">
+                <img src="assets/pic 18.webp" alt="" height="150px" width="240px">
+                <img src="assets/WhatsApp Image 2023-10-16 at 6.15.53 PM.jpeg" alt="" height="150px" width="241px">
+                <img src="assets/WhatsApp Image 2023-10-16 at 6.15.55 PM.jpeg" alt="" height="150px" width="250px">
+                <img src="assets/WhatsApp Image 2023-10-16 at 6.15.54 PM (1).jpeg" alt="" height="150px" width="200px">
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- <section class="gallery">
+
+        <div class="box">
+            <img src="data:image/jpeg;base64,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"
+                alt="">
+        </div>
+       
+       
+       
+      
+       
+    </section> -->
+
+    <section class="contact py-5" id="contact">
+        <div class="container">
+            <div class="text-center">
+                <h1 data-aos="fade-up" data-aos-offset="300">For <span class="text-primary">Contact </span></h1>
+                <hr class="w-25 m-auto">
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12 ">
+                    <form id="myForm" class="row g-3">
+                        <div class="col-md-6">
+                            <label for="inputEmail4" class="form-label">Email</label>
+                            <input required class="form-control" id="inputEmail4">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputPassword4" class="form-label">Password</label>
+                            <input required type="password" class="form-control" id="inputPassword4">
+                        </div>
+                        <div class="col-12">
+                            <label for="inputAddress" class="form-label">Address</label>
+                            <input required type="text" class="form-control" id="inputAddress"
+                                placeholder="1234 Main St">
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="inputCity" class="form-label">City</label>
+                            <input required type="text" class="form-control" id="inputCity">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="inputState" class="form-label">State</label>
+                            <select id="inputState" class="form-select">
+                                <option selected>Choose...</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2">
+                            <label for="inputZip" class="form-label">Zip</label>
+                            <input type="text" class="form-control" id="inputZip">
+                        </div>
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                    Check me out
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" onclick="validateForm()" class="btn btn-primary">Sign in</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <div class="container">
+        <h1 class="text-primary">TESTIMONIALS </h1>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="card main" style="height: 270px;">
+                        <div class="card-body">
+                            <h5 class="card-title">ZARA THEREPY CLINIC</h5>
+                            <p class="card-text">I was very well informed and well taken care of. Thank you for
+                                providing the service you do. Thank you for your professional, easily accessible and
+                                non-judgemental care. I felt very comfortable in the zara therepy clinic..</p>
+                            <p> HADI shah</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card main" style="height: 270px;">
+                        <div class="card-body">
+                            <h5 class="card-title">ZARA THEREPY CLINIC</h5>
+                            <p class="card-text">I was very well informed and well taken care of. Thank you for
+                                providing the service you do. Thank you for your professional, easily accessible and
+                                non-judgemental care. I felt very comfortable in the zara therepy clinic..</p>
+                            <p> MR Taha </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card main" style="height: 270px;">
+                        <div class="card-body">
+                            <h5 class="card-title">ZARA THEREPY CLINIC</h5>
+                            <p class="card-text">I was very well informed and well taken care of. Thank you for
+                                providing the service you do. Thank you for your professional, easily accessible and
+                                non-judgemental care. I felt very comfortable in the zara therepy clinic..</p>
+                            <p> Ahmer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start text-muted pt-3 bg-primary text-light">
+
+        <!-- Section: Links  -->
+        <section class="">
+            <div class="container-fluid text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row ">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 text-light">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <i class="fas fa-gem me-3"></i>Zara Therapy Clinic
+                        </h6>
+                        <p>
+                            Established in 2006, the Zara Chiropractic Clinic is the first chiropractic clinic opened
+                            and registered in 2006 under the Ministry of Health, Vietnam.
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 text-light">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Products
+                        </h6>
+                        <p class="footer.Links">
+                            <a href="#products" class="text-reset">body relaxing oil</a>
+                        </p>
+                        <p class="footer.Links">
+                            <a href="#products" class="text-reset">body shaping massager</a>
+                        </p class>
+                        <p class="footer.Links">
+                            <a href="#products" class="text-reset">foot massager machine</a>
+                        </p>
+                        <p class="footer.Links">
+                            <a href="#products" class="text-reset">electric massager </a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-2 mx-auto mb-md-0 mb-4 text-light">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                        <p><i class="fas fa-home me-3"></i> aptech metro</p>
+                        <p><i class="fas fa-envelope me-3"></i>ahmar@gmail.com</p>
+                        <p><i class="fas fa-phone me-3"></i> +92 317 8927704</p>
+                        <p><i class="fas fa-print me-3"></i> +92 346 0283700</p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-3 col-xl-3  mb-4 text-light">
+                        <!-- Links -->
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3619.3029561847984!2d67.14949697590734!3d24.887645744168225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33999ec8ecc87%3A0xda9cc5004c86e53f!2sMETRO%20Stargate%2C%20Karachi!5e0!3m2!1sen!2s!4v1697209031404!5m2!1sen!2s"
+                            width="100%" height="100%" style="border:0;" allowfullscreen=""
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <!-- Grid column -->
+
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-4  text-light" style="background-color: rgba(2, 0, 134, 0.575);">
+            © 2023 Copyright:
+            <a class="text-reset fw-bold" href="#">Zara Therapy Clinic</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+</body>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+<!-- Initialize Swiper -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+        },
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+    });
+</script>
+<script>
+    function validateForm() {
+        const emailInput = document.getElementById('inputEmail4');
+        const passwordInput = document.getElementById('inputPassword4');
+        const addressInput = document.getElementById('inputAddress');
+        const cityInput = document.getElementById('inputCity');
+
+        const emailPattern = /[^\s@]+@[^\s@]+\.[^\s@]+/;
+        const passwordPattern = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@#$%^&+=!]).{8,}$/;
+        const addressPattern = /^.*$/;
+        const cityPattern = /^[A-Za-z -]+$/;
+
+        if (!emailPattern.test(emailInput.value)) {
+            alert('Invalid email address');
+            return;
+        }
+
+        if (!passwordPattern.test(passwordInput.value)) {
+            alert('Invalid password');
+            return;
+        }
+
+        if (!addressPattern.test(addressInput.value)) {
+            alert('Invalid address');
+            return;
+        }
+
+        if (!cityPattern.test(cityInput.value)) {
+            alert('Invalid city');
+            return;
+        }
+
+        // Submit the form if all fields are valid
+        alert('Form submitted successfully');
+        document.getElementById('myForm').submit();
+    }
+</script>
+
+</html>
